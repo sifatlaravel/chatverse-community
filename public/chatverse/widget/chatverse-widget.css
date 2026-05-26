@@ -1,0 +1,19 @@
+
+:root{--cv-bg:#0b1020;--cv-primary:#22c1ee;--cv-accent:#a855f7;--cv-text:#e8eefc;}
+#chatverse-root{all:initial;}
+.cv-btn{position:fixed;bottom:18px;right:18px;z-index:2147483647;font-family:ui-sans-serif,system-ui;display:flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--cv-primary),var(--cv-accent));color:#08101a;border:none;border-radius:999px;padding:12px 14px;box-shadow:0 12px 30px rgba(0,0,0,.35);cursor:pointer}
+.cv-btn img{width:26px;height:26px;border-radius:999px;background:#fff}
+.cv-panel{position:fixed;bottom:84px;right:18px;z-index:2147483647;width:min(380px,calc(100vw - 36px));height:min(560px,calc(100vh - 120px));border-radius:18px;overflow:hidden;background:rgba(8,12,24,.75);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.12);display:flex;flex-direction:column;font-family:ui-sans-serif,system-ui}
+.cv-header{padding:12px 14px;background:linear-gradient(135deg,rgba(34,193,238,.25),rgba(168,85,247,.25));border-bottom:1px solid rgba(255,255,255,.10);color:var(--cv-text)}
+.cv-header .brand{font-size:12px;opacity:.9}
+.cv-header .title{font-size:14px;font-weight:700;margin-top:2px}
+.cv-messages{flex:1;overflow:auto;padding:14px;display:flex;flex-direction:column;gap:10px}
+.cv-bubble{max-width:85%;padding:10px 12px;border-radius:14px;line-height:1.35;font-size:13px;color:var(--cv-text);border:1px solid rgba(255,255,255,.10)}
+.cv-user{align-self:flex-end;background:rgba(255,255,255,.06)}
+.cv-ai{align-self:flex-start;background:rgba(34,193,238,.10)}
+.cv-footer{padding:12px;border-top:1px solid rgba(255,255,255,.10);display:flex;gap:8px}
+.cv-input{flex:1;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);border-radius:12px;color:var(--cv-text);padding:10px 12px;font-size:13px;outline:none}
+.cv-send{background:linear-gradient(135deg,var(--cv-primary),var(--cv-accent));border:none;border-radius:12px;color:#07101a;font-weight:700;padding:10px 12px;cursor:pointer}
+.cv-lead{padding:12px;border-top:1px solid rgba(255,255,255,.10);background:rgba(0,0,0,.15);display:none;gap:8px;flex-direction:column}
+.cv-lead input{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);border-radius:12px;color:var(--cv-text);padding:10px 12px;font-size:13px;outline:none}
+.cv-lead button{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);border-radius:12px;color:var(--cv-text);padding:10px 12px;font-weight:700;cursor:pointer}
